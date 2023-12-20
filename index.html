@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./osmfood.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="logo">
+                <p>osmfood143<p>
+                <!-- <img src="./logo2.jpg" alt=""> -->
+            </div>
+            <div class="input">
+                <input type="text" value="" id="inp" placeholder="Search Here" onkeyup="myfun()">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="icon">
+                <i class="fa-solid fa-user"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+        <!-- <section class="login-form">
+        <div class="container">
+            <h2>Login</h2>
+            <form action="dashboard.html">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </section> -->
+        <!------------------- Main page--------------------- -->
+        <div class="main">
+            <div class="text">
+                <h1>Simple & Tasty Recipes</h1>
+                
+                <p>"If you really want to make a friend, go to someone's house and eat with him... the people who give you their food give you their heart.".."The secret of success in life is to eat what you like and let the food fight it out inside." </p>
+                <button>Explore More</button>
+            </div>
+            <img src="./f7.webp" alt="">
+        </div>
+        <!-- <-----------------cards-----------------------------> 
+        <table>
+            <tr>
+                <td>
+                    <div class="head">
+                        <h1>Our <span>Foods</span></h1>
+                    </div>
+                    <div id="boss">
+                    <div class="crd">
+                        <div class="card">
+                            <img src="./f3.jpg" alt="">
+                            <p> Tomato Soup</p>
+                            <p class="b1">299 rupees only</p>
+
+                            <p>"Soup is a lot like a family. Each ingredient enhances the others; each batch has its own Fact; and it needs time to simmer to reach full flavor."</p>
+                            <button>Order Now</button>
+                            <button class="add" onclick="add">Add to cart</button>
+                        </div>
+                    </div>
+                    <div class="crd">
+                        <div class="card">
+                            <img src="./f7.webp" alt="">
+                            <p> Chana Masala</p>
+                            <p class="b1">299 rupees only</p>
+                            <p>"The secret of success in life is to eat what you like and let the food fight it out inside."<br>"Food is memories."</p>
+                            <button>Order Now</button>
+                            <button class="add" onclick="add">Add to cart</button>
+                        </div>
+                    </div>
+                    <div class="crd">
+                        <div class="card">
+                            <img src="./f5.jpg" alt="">
+                            <p> kadai Paneer </p>
+                            <p class="b1">299 rupees only</p>
+                            <p>"Food is art & love. And we should show love and mood for those who cook it by eating it with relish."</p>
+                            <button>Order Now</button>
+                            <button class="add" onclick="add">Add to cart</button>
+                        </div>
+                    </div>
+                    </div>
+                    <div id="boss1">
+                    <div class="crd">
+                        <div class="card">
+                            <img src="./f6.jpg" alt="">
+                            <p> Tomato Soup</p>
+                            <p class="b1">299 rupees only</p>
+                            <p>"Food is art, and food is love. And we should show love and appreciation for those who cook it by eating it with relish."</p>
+                            <button>Order Now</button>
+                            <button class="add" onclick="add">Add to cart</button>
+                        </div>
+                    </div>
+                    <div class="crd">
+                        <div class="card">
+                            <img src="./f7.webp" alt="">
+                            <p> Tomato Soup</p>
+                            <p class="b1">299 rupees only</p>
+                            <p>"Food is art, and food is love. And we should show love and appreciation for those who cook it by eating it with relish."</p>
+                            <button>Order Now</button>
+                            <button class="add" onclick="add">Add to cart</button>
+                        </div>
+                    </div>
+                    <div class="crd">
+                        <div class="card">
+                            <img src="./f7.webp" alt="">
+                            <p> Tomato Soup</p>
+                            <p class="b1">299 rupees only</p>
+                            <p>"Food is art, and food is love. And we should show love and appreciation for those who cook it by eating it with relish."</p>
+                            <button>Order Now</button>
+                            <button class="add" onclick="add">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="head">
+                        <h1>Our <span>Blogs</span></h1>
+                    </div>
+                    <div id="boss2">
+                    <div class="crd">
+                        <div class="blog">
+                            <img src="./f11.jpg" alt="">
+                            <p class="b2">Fact About South Indian Food</p>
+                            <p>South Indian cuisine is probably the hottest (not the spiciest) of all Indian food. Meals are mainly made from rice or rice-based dishes.Good food Good Mood.</p>
+                            <a href="https://www.agatetravel.com/south-indian-food.html#:~:text=By%20and%20large%2C%20South%20Indian,dish)%20is%20eaten%20with%20rice.">Read More</a>
+                        </div>
+                    </div>
+                    <div class="crd">
+                        <div class="blog">
+                            <img src="./burgerb.png" alt="">
+                        
+                            <p class="b2">Diffrent Types of Burger</p>
+                            <p>Here are our favorite veggie burgers, and more proteins and toppings for cookouts, family meals, and more.</p>
+                            <a href="https://www.google.com/search?q=different+types+of+burgers+recipes&rlz=1C1VDKB_en-GBIN1077IN1078&oq=diffrent+types+of+burger&gs_lcrp=EgZjaHJvbWUqCQgFEAAYChiABDIGCAAQRRg5MgkIARAAGAoYgAQyCQgCEAAYChiABDIJCAMQABgKGIAEMgkIBBAAGAoYgAQyCQgFEAAYChiABDIJCAYQABgKGIAEMgkIBxAAGAoYgAQyCQgIEAAYChiABDIJCAkQABgKGIAE0gEJMzA3MTBqMGo5qAIAsAIA&sourceid=chrome&ie=UTF-8">Read More</a>
+                        </div>
+                    </div>
+                    <div class="crd">
+                        <div class="blog">
+                            <img src="./Tamarind.jpg" alt="">
+                            <p class="b2">Delicious Checken Recipes</p>
+                            <p> If your favourite meat is chicken, then there are many  options for you to go all out & indulge</p>
+                            <a href="https://food.ndtv.com/lists/10-best-indian-chicken-recipes-693207">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                    <div id="boss2">
+                    <div class="crd">
+                        <div class="blog">
+                            <img src="./f11.jpg" alt="">
+                            <p class="b2">Fact About South Indian Food</p>
+                            <p>South Indian cuisine is probably the hottest (not the spiciest) of all Indian food. Meals are mainly made from rice or rice-based dishes.Good food Good Mood.</p>
+                            <a href="https://www.agatetravel.com/south-indian-food.html#:~:text=By%20and%20large%2C%20South%20Indian,dish)%20is%20eaten%20with%20rice.">Read More</a>
+                        </div>
+                    </div>
+                    <div class="crd">
+                        <div class="blog">
+                            <img src="./burgerb.png" alt="">
+                            <p class="b2">Diffrent Types of Burger</p>
+                            <p>Here are our favorite veggie burgers, and more proteins and toppings for cookouts, family meals, and more.</p>
+                            <a href="https://www.google.com/search?q=different+types+of+burgers+recipes&rlz=1C1VDKB_en-GBIN1077IN1078&oq=diffrent+types+of+burger&gs_lcrp=EgZjaHJvbWUqCQgFEAAYChiABDIGCAAQRRg5MgkIARAAGAoYgAQyCQgCEAAYChiABDIJCAMQABgKGIAEMgkIBBAAGAoYgAQyCQgFEAAYChiABDIJCAYQABgKGIAEMgkIBxAAGAoYgAQyCQgIEAAYChiABDIJCAkQABgKGIAE0gEJMzA3MTBqMGo5qAIAsAIA&sourceid=chrome&ie=UTF-8">Read More</a>
+                        </div>
+                    </div>
+                    <div class="crd">
+                        <div class="blog">
+                            <img src="./Tamarind.jpg" alt="">
+                            <p class="b2">Delicious Checken Recipes</p>
+                            <p> If your favourite meat is chicken, then there are many  options for you to go all out & indulge</p>
+                            <a href="https://food.ndtv.com/lists/10-best-indian-chicken-recipes-693207">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                </td>
+            </tr>
+        </table>
+        <!-- <--------------Customer Review------------------> 
+
+            <div class="head">
+                <h2>Customer <span>Review</span></h2>
+            </div>
+            <div class="reviwe">
+                <div class="customer">
+                    <img src="./bhushan pasport size photo (4).png" alt=""><br>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                    <p>“This is always our breakfast stop before heading home from vacation. Always delicious. Always great service. Always worth the stop.”</p>
+
+                </div>
+                <div class="customer">
+                    <img src="./bhushan pasport size photo (4).png" alt=""><br>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                    <p>“This is always our breakfast stop before heading home from vacation. Always delicious. Always great service. Always worth the stop.”</p>
+
+                </div>
+                <div class="customer">
+                    <img src="./bhushan pasport size photo (4).png" alt=""><br>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                    <p>“This is always our breakfast stop before heading home from vacation. Always delicious. Always great service. Always worth the stop.”</p>
+
+                </div>
+                
+            </div>
+            <div id="btn1">
+                <div class="btn">
+                    <button onclick="pre()">Previous</button>
+                    <button onclick="next()">Next</button>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="txt">
+                    <p class="b3">About Us</p>
+                    <p>"First we eat, then we do everything else." </p>
+                    <p>Service</p>
+                    <p>customer</p>
+                    <p>Foods</p>
+                </div>
+                <div class="txt">
+                    <p class="b3">About Us</p>
+                    <p>Product </p>
+                    <p>Service</p>
+                    <p>customer</p>
+                    <p>Foods</p>
+                </div>
+                <div class="txt">
+                    <p class="b3">About Us</p>
+                    <p>Near</p>
+                    <p>Service</p>
+                    <p>customer</p>
+                    <p>Foods</p>
+                </div>
+                <div class="txt">
+                    <p class="b3">About Us</p>
+                    <p>Websites </p>
+                    <p>Service</p>
+                    <p>customer</p>
+                    <p>Foods</p>
+                </div>
+            </div>
+            <section class="contact">
+                <div class="container">
+                    <h2>Contact Us</h2>
+                    <form>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" required></textarea>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </section>
+
+          
+    </div>
+    <script src="./osmfood.js"></script>
+</body>
+</html>
